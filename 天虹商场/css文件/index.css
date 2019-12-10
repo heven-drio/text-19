@@ -42,25 +42,6 @@
 #nav .nLeft .bbox .box li span:hover{color: red;}
 /* #nav .nLeft .bbox li:hover .box{display: block;} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #nav .nCenter{ position: absolute; top: 15px; left: 575px; font-weight: 800;}
 #nav .nCenter a{color: red; font-size: 14px;}
 #nav .nRight{ position: absolute; top: 15px; left: 650px; }
@@ -98,18 +79,19 @@
 
 
 /* 选项卡+楼层 1*/
- #tab{ width: 100%; clear: both; overflow: hidden;}
+ #tab{ width: 100%; clear: both; overflow: hidden; position: relative; }
+
 /* _________________选项卡1_______________________ */
 
 #tab .food{ height: 515px; }
 #tab .food .top{height: 35px; border-bottom: #968239 solid 2px;}
 #tab .food .top .xtop{ height: 35px; position: relative; display: flex; align-items: center; position: relative;  position: relative; }
 #tab .food .top .xtop li{ padding:  0 50px; margin: 0 40px; line-height: 35px;}
-#tab .food .top .xtop li:hover{ background: #968239;}
+/* #tab .food .top .xtop li:hover{ background: #968239;} */
 /* __________________选项卡1-1_________________________ */
 #tab .food .top .xtop li .mstj{width: 830px; ; position: absolute; right: 0; display: block; }
 #tab .food .top .xtop li .mstj li{ border-right: 1px dashed #b6b6b6;margin: 3px; border-bottom: 1px dashed #b6b6b6;float: left;width: 100px; height: 228px;}
-#tab .foode .top .xtop li .mstj li img{ text-align: center; width:140px; height: 228px;}
+#tab .foode .top .xtop li .mstj img{ text-align: center; width:144px; height: 226px;}
 #tab .foode .top .xtop li .mstj:nth-child(1){display: block;}
 /* __________________选项卡1-2_________________________ */
 
@@ -150,18 +132,13 @@
 #tab .food .left .commodity .Lcommodity li a{display: inline-block; width: 80px; font: 12px/34px ""; height: 34px;background: #fff; text-align: center;}
 #tab .food .left .commodity .Lcommodity li a:hover{background: #968239; color: #fff;}
 
-
-
-
-
-
 /* _________________选项卡2_______________________ */
 
 #tab .live{ height: 515px; }
 #tab .live .top{height: 35px; border-bottom: #968239 solid 2px;}
 #tab .live .top .xtop{ height: 35px; position: relative; display: flex; align-items: center; position: relative;  position: relative; }
 #tab .live .top .xtop li{ padding:  0 50px; margin: 0 40px; line-height: 35px;}
-#tab .live .top .xtop li:hover{ background: #968239;}
+/* #tab .live .top .xtop li:hover{ background: #968239;} */
 /* __________________选项卡2-1_________________________ */
 #tab .live .top .xtop li .ppcx{width: 830px; ; position: absolute; right: 0; display: block; }
 #tab .live .top .xtop li .ppcx li{ border-right: 1px dashed #b6b6b6;margin: 3px; border-bottom: 1px dashed #b6b6b6;float: left;width: 100px; height: 228px;}

@@ -1,11 +1,7 @@
-
+.margin{width: 1190px; margin: 0 auto;}
  
-/* 
-.yonghu{width:134px;border:1px solid #ccc;position: absolute;left:141px;background:#fff;border-bottom: none;}
-.yonghu p{font:20px/30px "";padding-left:25px;color:red;}
 
- footer{width:980px;height:561px;border:1px solid #ccc;margin-top:29px;}
-
+footer{height:561px;border:1px solid #ccc;margin-top:29px;}
 footer #footer-a{width: 640px;float: left;}
 footer #footer-a .span{width: 130px;height:561px;float: left;}
 footer #footer-a .span span{float:left;margin:32px 0 32px 50px;}
@@ -15,11 +11,11 @@ footer #footer-a #input #tonyi{background:red;color:#fff;border:none;}
 
 footer .footer-b{width:246px;height:104px;float:right;margin-right:40px;padding-top:40px;border-bottom:1px solid #ccc;}
 footer .footer-b p{font:16px/30px "";color:#000;padding:0 0 20px 40px;}
-footer .footer-b input{width: 134px;height:33px;color:red;margin:0 0 0 40px;} */
+footer .footer-b input{width: 134px;height:33px;color:red;margin:0 0 0 40px;} 
 
-footer{}
-footer p{ width: 150px; height: 32px; font: 16px/2 "";color: red; background: rosybrown; opacity: .5; text-align: center;}
+ /* footer p{ width: 150px; height: 32px; font: 16px/2 "";color: black; background: rosybrown; opacity: .5; text-align: center;}
 footer ul{width: 500px; height: 400px; border: salmon 1px solid }
 footer ul li{ margin: 20px 0;}
 footer ul li span{font: 800 16px/2 "";}
-footer ul li input{ width: 300px; height: 30px;}
+footer ul li input{ width: 300px; height: 30px;} 
+footer ul li .zc{display: block; padding: 20px; background: cadetblue;} */

@@ -8,6 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css文件/index.css">
     <link rel="stylesheet" href="./public/public.css">
+    <script>
+            window.onload = function(){
+                var titleBox = document.querySelector("#header .right");
+                    if(sessionStorage.getItem("nowUser")){
+                        titleBox.innerHTML = `欢迎光临，${sessionStorage.getItem("nowUser")}`;
+                    }
+            }
+        </script>
 </head>
 
 <body>
@@ -23,10 +31,10 @@
             <div class="right">
                 <ul>
                     <li>你好，欢饮来到天虹!</li>
-                    <li><a href="./den/register.html">[登录]</a></li>
-                    <li><a href="./zhu/load.html">[注册]</a></li>
+                    <li><a href="./login.html">[登录]</a></li>
+                    <li><a href="./restiger.html">[注册]</a></li>
                     <span>|</span>
-                    <li><a href="#">我的订单</a></li>
+                    <li><a href="./shopping.html">我的订单</a></li>
                     <span>|</span>
                     <li><a href="#">我的天虹</a></li>
                     <span>|</span>
@@ -3393,7 +3401,12 @@
             <div class="food">
                 <div class="top">
                     <ul class="xtop">
-                        <h3>美食馆</h3>
+                        <h3>
+                            <span>美食馆</span>
+                        </h3>
+
+
+
                         <li>
                             <span>美食推荐</span>
                             <ul class="mstj">
@@ -3632,8 +3645,9 @@
 <script src="./js文件/Ljjjf.js"></script>
 <!--选项卡2-4-->
 
-
 <script src="./js文件/tab.js"></script>
 <!--楼层-->
+
+
 
 </html>
