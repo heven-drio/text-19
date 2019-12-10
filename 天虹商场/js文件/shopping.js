@@ -28,7 +28,7 @@ class Car{
                                 <td><p>${this.res[i].name}</p></td>
                                 <td>${this.res[i].price}</td>
                                 <td></td>
-                                <td><input type="number"" min="1"></td>
+                                <td><input type="number""${this.goods[j].num} min="1"></td>
                                 <td><span>删除</span></td>
                             </tr>`
                     }
@@ -51,6 +51,9 @@ class Car{
                 that.id = eve.target.parentNode.parentNode.getAttribute("index");
                 that.value = eve.target.value;
                 that.changeCookie();
+                that.updataCookir(function(i){
+                    that.goods[i].num = eve.target.value;
+                })
             }
         })
     }

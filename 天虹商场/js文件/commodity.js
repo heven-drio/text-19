@@ -16,7 +16,9 @@ class Commodity{
         var str="";
         for(var i=0; i<this.res.length;i++){
             str+=`
-            <li><img src="${this.res[i].img}" alt="">
+            <li><img src="${this.res[i].img}" style="width:100px; height="226px;" alt="">
+            <p>"${this.res[i].p}"</p>
+            <span>"${this.res[i].span}"</span>
             </li>
             `
             // console.log(str)

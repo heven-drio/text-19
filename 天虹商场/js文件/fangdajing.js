@@ -49,3 +49,10 @@ box.onmousedown = function (e) {
 document.onmouseup = function () {
     document.onmousemove = null;
 }
+
+
+
+
+
+
+

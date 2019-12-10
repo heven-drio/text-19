@@ -20,7 +20,7 @@ class Shangpinliebiao{
         var str = "";
         for(var i =0;i<this.res.length;i++){
             str += `<div class="box" index="${this.res[i].goodsId}">
-            <a href="http://localhost/tian/paging/magnifier.html"><img src="${this.res[i].img}" alt=""></a>
+            <a href="http://localhost/天虹商场/fangdajing.html"><img src="${this.res[i].img}" alt=""></a>
             <p>${this.res[i].name}</p>
                         <span>${this.res[i].price}</span>
                         <input type="button" value="加入购物车" class="btn" >
