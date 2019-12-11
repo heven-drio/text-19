@@ -28,7 +28,7 @@ class Car {
         var str = "";
         for (var i = 0; i < this.res.length; i++) {
             for (var j = 0; j < this.goods.length; j++) {
-                if (this.res[i].goodsId === this.goods[j].id) {
+                if (this.res[i].goodsId == this.goods[j].id) {
                     // 4.相同了，渲染这个数据（就是添加到购物车的商品）
                     str += `<tr index="${this.goods[j].id}">
                                 <td><input type="checkbox" class="checkLine" id="checkAll"></td>
@@ -61,7 +61,7 @@ class Car {
                 // 是真正的删除cookie么？不是
                 // 因为只有一条cookie，里面的数据是数组的形式
                 // 从这条cookie中剔除出这个数据
-                that.updateCookie(function (i) {
+                that.changeCookie(function (i) {
                     that.goods.splice(i, 1);
                 });
             }
@@ -72,7 +72,7 @@ class Car {
                 // 6-2.保存要修改的数据的id
                 that.id = eve.target.parentNode.getAttribute("index");
                 // 7-2.调用更新cookie的方法，传入修改操作
-                that.updateCookie(function (i) {
+                that.changeCookie(function (i) {
                     that.goods[i].num = eve.target.value;
                 });
                 eve.target.parentNode.parentNode.querySelector("s").innerHTML = parseInt (eve.target.parentNode.parentNode.querySelector("i").innerHTML.slice(1,5))* parseInt (eve.target.value);
@@ -85,10 +85,12 @@ class Car {
         })
     }
 
-    updateCookie(cb) {
-        for (var j = 0;  j< this.goods.length; j++) {
-            if (this.goods[j].id === this.id) {
-                cb(j);
+    changeCookie(cb) {
+        for (var i = 0;  i< this.goods.length; i++) {
+            // if (this.goods[i].id == this.id) {
+                if(this.id == this.goods[i].id){
+                cb(i);
+                break;
             }
         }
         setCookie("goods", JSON.stringify(this.goods))

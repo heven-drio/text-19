@@ -35,7 +35,7 @@
 #nav{width: 100%; height:40px; color: #666; clear: both; position: relative; border-bottom: 3px solid #968239;}
 #nav .nLeft{ position: absolute; top: 0; left: 100; background: #000;}
 #nav .nLeft h2{ background: #968239; width:166px; height: 38px; font: 15px/38px ""; text-align: center; padding: 0 12px; color: #fff;}
-#nav .nLeft li{ width:166px; height: 41px; font: 14px/41px ""; text-align: center; padding: 0 12px; color: #fff;}
+#nav .nLeft li{ width:166px; height: 41px; font: 14px/41px "";  padding: 0 12px; color: #fff;}
 #nav .nLeft li:hover{background: #BDB76B;}
 #nav .nLeft .bbox .box{width: 810px; height: 500px;color: black; background: #F2F2F2; z-index: 10; position: absolute; left:190px; top: 40px; display: none;}
 #nav .nLeft .bbox .box li{float: left; width:300px; }
@@ -60,9 +60,9 @@
 .right{right: 0;}
 
 #list .Lright{width: 190px; height: 455px; position: absolute;top:155px; right:365px ;}
-#list .Lright img{ width: 190px; height: 250px;}
+#list .Lright img{ width: 190px; height: 250px; margin: 0 0 0 9px;}
 
-#list .Lright .msg{width: 190px; height: 198px; background: #F2F2F2; margin-top: 10px;}
+#list .Lright .msg{width: 190px; height: 198px; background: #F2F2F2; margin:10px;}
 #list .Lright .msg h4{padding: 10px 0; text-indent: 2em;}
 #list .Lright .msg ul{width: 190px; border-top: 1px solid #E3E3E3; }
 #list .Lright .msg li{width:180px; padding: 10px 0px; margin: 0px 10px;}
@@ -172,9 +172,6 @@
 #tab .live .top .xtop .jjjf li img{ text-align: center; width:140px; height: 120px;width: 100px;  } 
 #tab .live .top .xtop .jjjf li p{text-align: center;}
 #tab .live .top .xtop .jjjf li span{text-align: center; display: inline-block; margin:  0 auto; margin-left: 25px;}
-
-
-/* __________________________ */
 #tab .live .left{ float: left; clear: both; border-right: 1px dashed #b6b6b6;padding-right: 3px; margin-top: 10px; width: 360px;}
 #tab .live .left img{width: 360px; height: 370px; float: left;}
 #tab .live .left .commodity{width: 360px;height: 102px; background: #f3f3f3;}
@@ -182,6 +179,9 @@
 #tab .live .left .commodity .Lcommodity li{margin: 10px 5px 5px 5px;}
 #tab .live .left .commodity .Lcommodity li a{display: inline-block; width: 80px; font: 12px/34px ""; height: 34px;background: #fff; text-align: center;}
 #tab .live .left .commodity .Lcommodity li a:hover{background: #968239; color: #fff;}
+
+
+/* __________________________ */
 
 
 
