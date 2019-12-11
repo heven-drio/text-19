@@ -40,7 +40,7 @@ class Car {
                                 <td><s>${parseInt(this.res[i].price.slice(1,5)) * this.goods[j].num}</s></td>
                                 </li>`
                             }
-                            // console.log(s)
+                           
                             // console.log(parseInt(this.res[i].price.slice(1,5)))
 
 
@@ -69,17 +69,12 @@ class Car {
         // 5-2.委托修改的事件
         this.tbody.addEventListener("input", function (eve) {
             if (eve.target.tagName == "INPUT") {
-                // 6-2.保存要修改的数据的id
                 that.id = eve.target.parentNode.getAttribute("index");
-                // 7-2.调用更新cookie的方法，传入修改操作
                 that.changeCookie(function (i) {
                     that.goods[i].num = eve.target.value;
                 });
                 eve.target.parentNode.parentNode.querySelector("s").innerHTML = parseInt (eve.target.parentNode.parentNode.querySelector("i").innerHTML.slice(1,5))* parseInt (eve.target.value);
-            //    var t = parseInt (eve.target.parentNode.parentNode.querySelector("i").innerHTML.slice(1,5))* parseInt (eve.target.value)
-
-                
-                // console.log(eve.target.parentNode.parentNode.querySelector("s").innerHTML)
+            
             }
 
         })
@@ -87,6 +82,8 @@ class Car {
 
     changeCookie(cb) {
         for (var i = 0;  i< this.goods.length; i++) {
+        // for (var i = 0;  i< i < this.res.length; i++) {
+            console.log(i)
             // if (this.goods[i].id == this.id) {
                 if(this.id == this.goods[i].id){
                 cb(i);
